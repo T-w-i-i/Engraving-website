@@ -11,6 +11,7 @@ from django.utils import timezone
 from datetime import datetime, timedelta, time, date
 from django.contrib import messages
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -21,6 +22,7 @@ def home(request):
 from django.db.models import Q
 
 
+@csrf_exempt
 def bookingpage(request):
     image_data = None
     if request.method == 'POST':
