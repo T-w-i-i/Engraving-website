@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DVII LTD</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="{% static 'websiteapp/img/dvilogo.jpg' %}">
+  <link rel="apple-touch-icon" href="{% static 'websiteapp/img/dvilogo.jpg' %}" >
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="{% static 'websiteapp/vendor/animate.css/animate.min.css' %}" >
+  <link rel="stylesheet" href="{% static 'websiteapp/vendor/bootstrap/css/bootstrap.min.css' %}" >
+  <link rel="stylesheet" href="{% static 'websiteapp/vendor/bootstrap-icons/bootstrap-icons.css' %}" >
+  <link rel="stylesheet" href="{% static 'websiteapp/vendor/boxicons/css/boxicons.min.css' %}" >
+  <link rel="stylesheet" href="{% static 'websiteapp/vendor/glightbox/css/glightbox.min.css' %}" >
+  <link rel="stylesheet" href="{% static 'websiteapp/vendor/swiper/swiper-bundle.min.css' %}" >
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{% static 'websiteapp/css/style.css' %}" >
+
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+      <i class="bi bi-phone d-flex align-items-center"><span>+254 700 111 223</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 8:00 AM - 07:00 PM</span></i>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">DVII LTD</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        
+        <ul>
+          <li><a class="nav-link scrollto active" href="{% url 'home' %}">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Previous Work</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="{% url 'generate_text_graphics' %}" class="book-a-table-btn scrollto">Book an Engraving</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url({% static 'websiteapp/img/slide/laptop1.jpg' %} );">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown"><span>DVII</span> LTD</h2>
+                <p class="animate__animated animate__fadeInUp">LIVING INNOVATION</p>
+                <div>
+                  <a href="{% url 'generate_text_graphics' %}"" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Laptop Engraving</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url({% static 'websiteapp/img/slide/laptop3.jpg' %} );">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">DVII</h2>
+                <p class="animate__animated animate__fadeInUp">LIVING INNOVATION</p>
+                <div>
+                  <a href="{% url 'generate_text_graphics' %}" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Laptop Engraving</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url({% static 'websiteapp/img/slide/laptop4.jpg' %} );">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">DVII</h2>
+                <p class="animate__animated animate__fadeInUp">LIVING INNOVATION</p>
+                <div>
+                  
+                  <a href="{% url 'generate_text_graphics' %}" class="btn-book animate__animated animate__fadeInUp scrollto">Book a Laptop Engraving</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+  
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2><span>Step 2 : Book </span> the Engraving</h2>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+
+        <form  method="POST" >
+          {% csrf_token %}
+         
+          <div class="form-group mt-3">
+            {{ form.as_p }}
+          </div>
+          
+          <input type="submit" value="Book" id="submit-btn">
+        </form>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>DVII</h3>
+      <p>LIVING INNOVATION</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>DVII</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">Martin Muru</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'websiteapp/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'websiteapp/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'websiteapp/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'websiteapp/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'websiteapp/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'websiteapp/js/main.js' %}"></script>
+
+</body>
+
+</html>
